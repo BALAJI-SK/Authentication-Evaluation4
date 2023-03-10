@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest tests/**/*.test.js --coverage"
+    "test": "npx jest tests/**/*.test.js --coverage",
+    "start": "node index.js",
+    "migrate": "sequelize db:migrate"
   },
   "author": "",
   "license": "ISC",
