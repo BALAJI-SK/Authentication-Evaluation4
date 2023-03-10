@@ -33,7 +33,7 @@ const login = async (request, response) => {
 
 const validateToken = async (request, response) => {
     try {
-        const { token } = request.query;
+        const { token } = request.params;
         const decoded = await authService.validateToken(token);
         response.status(200).json({ message: 'Token is valid', data: decoded });
     } catch (error) {
